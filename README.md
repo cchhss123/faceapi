@@ -8,8 +8,9 @@
 
 2. 使用 docker-compose 佈署與啟動 容器
    
-    cd docker
-    docker-compose up -d
+   cd docker
+
+   docker-compose up -d
 
 # 人臉識別 / 人臉訓練 管理頁面
 
