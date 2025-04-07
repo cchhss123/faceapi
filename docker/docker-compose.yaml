@@ -1,0 +1,20 @@
+version: "3"
+services:
+
+    face_recog:
+        image: face_recog_andrew
+        ports: 
+            - "5020:5000"
+        expose:
+            - "5000"
+        container_name: face_recog
+        working_dir: /app
+        command: bash -c "python3 web_service.py"
+        volumes:
+            #    - ./face:/face_recognition
+            - ../app:/app
+        networks:
+            - default
+
+volumes:
+    persistent:
