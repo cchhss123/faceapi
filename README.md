@@ -1,10 +1,13 @@
 # 佈署 Docker for face-api-server 流程
 
 1. 使用 Dockerfile 建立 face_recog_andrew image
-    cd docker/face_recog
-    docker build -t face_recog_andrew . --no-cache
+
+   cd docker/face_recog
+   
+   docker build -t face_recog_andrew . --no-cache
 
 2. 使用 docker-compose 佈署與啟動 容器
+   
     cd docker
     docker-compose up -d
 
