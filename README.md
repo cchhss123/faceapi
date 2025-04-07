@@ -1,13 +1,22 @@
+# 說明
+
+    1.本專案基於 python face_recognition 套件，開發 人臉識別 的API
+
+    2.感謝 face_recognition 套件的作者 Adam Geitgey，讓其他開發者能夠輕鬆地實現人臉辨識功能。
+    face_recognition 套件起源是基於 dlib 的高效能人臉辨識功能，將 dlib 的人臉辨識功能進行了 Python 封裝，使其更易於使用。
+    face_recognition 官方代碼倉庫: https://github.com/ageitgey/face_recognition
+
+    
 # 佈署 Docker for face-api-server 流程
 
-1. 使用 Dockerfile 建立 "face_recog_andrew" image
+    1. 使用 Dockerfile 建立 "face_recog" image
  
-   docker build -t face_recog_andrew . --no-cache
+        docker build -t face_recog . --no-cache
 
 
-2. 使用 docker-compose 佈署與啟動 容器
+    2. 使用 docker-compose 佈署與啟動 容器
 
-   docker-compose up -d
+        docker-compose up -d
 
 
 # 人臉識別 / 人臉訓練 管理頁面

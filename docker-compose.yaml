@@ -2,7 +2,7 @@ version: "3"
 services:
 
     face_recog:
-        image: face_recog_andrew
+        image: face_recog
         ports: 
             - "5020:5000"
         expose:
