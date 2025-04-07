@@ -11,8 +11,7 @@ services:
         working_dir: /app
         command: bash -c "python3 web_service.py"
         volumes:
-            #    - ./face:/face_recognition
-            - ../app:/app
+            - ./app:/app
         networks:
             - default
 
