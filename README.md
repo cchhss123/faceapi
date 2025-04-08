@@ -1,12 +1,14 @@
 # 說明
 
-    1.本專案基於 python face_recognition 套件，並整合 flask, 開發出[人臉識別API應用]，
+    1.本專案基於 python face_recognition 套件，以python撰寫人臉識別的相關應用邏輯，
+    並結合 flask 與 flask_restx(建立 RESTful API，自動產生 Swagger 文件) , 開發出[人臉識別API應用service]。
+        
         1.1.可對 上傳頭像 進行人臉訓練編碼
         1.2.可 上傳頭像，比對 已經訓練的人臉列表中，找出 信心值最高的 頭像
 
     2.感謝 face_recognition 套件的作者 Adam Geitgey，讓其他開發者能夠輕鬆地實現人臉辨識功能。
-    face_recognition 套件，將 dlib 的人臉辨識功能進行了 Python 封裝，使其更易於使用。
-    face_recognition 官方代碼倉庫: https://github.com/ageitgey/face_recognition
+        face_recognition 套件，將 dlib 的人臉辨識功能進行了 Python 封裝，使其更易於使用。
+        face_recognition 官方代碼倉庫: https://github.com/ageitgey/face_recognition
 
 
 # 以 Docker 佈署 face-api-server 流程
